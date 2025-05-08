@@ -94,7 +94,7 @@ Gem og luk filen (i nano: CTRL + O, ENTER, CTRL + X).
 1. Start container:
 
 ```bash
-docker compose up -d mariadb
+docker-compose up -d mariadb
 ```
 
 2. Containeren vil automatisk importere `sql/create_schema.sql` og `sql/sample_data.sql` ved første opstart.
