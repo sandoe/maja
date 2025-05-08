@@ -1,36 +1,59 @@
-👋 **Velkommen til Elev i JYSK Workshops!**
+👋 **Velkommen til Elev i JYSK – Netværk & Databaseforløb**
 
 ---
 
 ## 🌟 Introduktion
 
-Dette forløb fokuserer udelukkende på **netværk** og **relationsdatabaser**. Du lærer at konfigurere Docker‑netværk, opstille en robust **MariaDB**‑backend og arbejde med normaliserede skemaer, SQL‑forespørgsler og database­administration til *Elev i JYSK*‑appen.
+Dette forløb fokuserer udelukkende på **netværk** og **relationsdatabaser**. Du lærer at konfigurere Docker‑netværk, opstille en robust **MariaDB**‑backend og arbejde med normaliserede skemaer, SQL‑forespørgsler og dataudtræk gennem et simpelt Node.js‑script.
 
-Alle øvelser er hands‑on og bygger oven på hinanden, så du ender med en komplet, driftssikker database­løsning.
+Alle workshops er hands‑on og bygger oven på hinanden, så du opbygger en fuldt fungerende og sikker database­løsning.
 
 ---
 
-## 📆 Struktur for workshops
+## 📆 Workshopstruktur
 
-| Nr. | Workshop                                                 | Fokus                                                    |
-| --- | -------------------------------------------------------- | -------------------------------------------------------- |
-| 1   | **Workshop 1 – Docker‑netværk & Grund­læggende MariaDB** | Opret bridge‑netværk, start container, seed eksempeldata |
-| 2   | **Workshop 2 – Datamodellering & Normalisering**         | Design 3NF‑skema, primær‑/fremmednøgler, ER‑diagram      |
-| 3   | **Workshop 3 – SQL‑forespørgsler & Statistik**           | CRUD‑operationer, JOINs, aggregering, views og index     |
-| 4   | **Workshop 4 – Backup, Sikkerhed & Rettigheder**         | Brugerstyring, læse‑/skrive­rettigheder, dump & restore  |
+| Nr. | Titel                                                    | Fokus                                                          |
+| --- | -------------------------------------------------------- | -------------------------------------------------------------- |
+| 1   | **Workshop 1 – Docker‑netværk & Grund­læggende MariaDB** | Bridge‑netværk, start container, seed med eksempeldata         |
+| 2   | **Workshop 2 – Datamodellering & Normalisering**         | Design af 3NF‑skemaer, primær‑/fremmednøgler, ER‑diagram       |
+| 3   | **Workshop 3 – SQL‑forespørgsler & Statistik**           | CRUD, JOINs, GROUP BY, aggregering, visninger og indeks        |
+| 4   | **Workshop 4 – Backup, Sikkerhed & Rettigheder**         | Adgangsrettigheder, dump/restore, sikkerhed for brugerdata     |
+| 5   | **Workshop 5 – Node.js & Datatilgængelighed**            | Tilslutning med Node.js, forespørgsler, dataprint i terminalen |
+
+---
+
+## 🧰 Krav til værktøjer
+
+* Docker + Docker Compose (24+)
+* Git (valgfrit)
+* MariaDB Client (11+)
+* Node.js (18+ anbefales)
+* Editor som VS Code
+
+---
+
+## 🔧 Node.js‑integration
+
+I den afsluttende workshop bygger du et **enkelt Node.js‑script**, der forbinder til MariaDB og henter data.
+
+Scriptet skal:
+
+* Koble op til databasen vha. `mysql2` eller `mariadb` npm‑pakke
+* Hente fx alle ansøgninger fra `application`‑tabellen
+* Udskrive data overskueligt i terminalen
 
 ---
 
 ## 📚 Kompetencer du opbygger
 
-* Konfiguration af Docker‑netværk til databaser
-* Opsætning og administration af MariaDB‑servere
-* Design af normaliserede relationsskemaer i 3. normalform
-* Skrivning af effektive SQL‑forespørgsler (JOIN, GROUP BY, sub‑queries)
-* Implementering af backup‑strategier og brugerrettigheder
+* Forståelse for Docker‑netværk og container‑opsætning
+* Oprettelse og normalisering af relationelle skemaer i MariaDB
+* Skrivning af SQL‑forespørgsler og dataanalyse
+* Backup og adgangsstyring i databasekontekst
+* Praktisk anvendelse af databaseforbindelser i Node.js
 
 ---
 
 ## 📜 Licens
 
-Dette materiale udgives under MIT‑licensen – se `LICENSE` for detaljer.
+Udgivet under MIT‑licensen – se `LICENSE` for detaljer.
