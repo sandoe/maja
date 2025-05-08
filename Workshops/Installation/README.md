@@ -30,7 +30,7 @@ Denne vejledning hjælper dig med at installere og konfigurere **Elev i JYSK –
 3. Sørg for, at mappen indeholder:
 
    * `docker-compose.yml`
-   * `.env.example`
+   * `.env.example` (eller lav en ny selv – se næste trin)
    * `sql/create_schema.sql` og `sql/sample_data.sql`
    * Eventuelt `query.js` og `package.json`
 
@@ -38,7 +38,7 @@ Denne vejledning hjælper dig med at installere og konfigurere **Elev i JYSK –
 
 ## 3. Opret `docker-compose.yml`
 
-Opret filen i roden af projektmappen:
+Opret filen i roden af projektmappen hvis den ikke findes:
 
 ```yaml
 version: '3.9'
@@ -67,15 +67,16 @@ networks:
 
 ---
 
-## 4. Opret .env-fil
+## 4. Opret .env-fil manuelt
 
-Hvis `.env.example` findes, kopier den:
+Hvis `.env.example` **ikke findes**, så opret filen selv:
 
 ```bash
-cp .env.example .env
+touch .env
+nano .env
 ```
 
-Indhold:
+Indsæt følgende i filen:
 
 ```env
 MYSQL_ROOT_PASSWORD=hemmelig
@@ -83,6 +84,8 @@ MYSQL_DATABASE=jysk_workshop
 MYSQL_USER=jysk
 MYSQL_PASSWORD=jyskpass
 ```
+
+Gem og luk filen (i nano: CTRL + O, ENTER, CTRL + X).
 
 ---
 
