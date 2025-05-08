@@ -4,37 +4,33 @@
 
 ## 🌟 Introduktion
 
-Dette GitHub‑forløb guider dig og dit team igennem hele processen med at designe, implementere og sikre **Elev i JYSK‑appen** – en rekrutterings‑ og fastholdelsesplatform for JYSK‑elever. Undervejs bygger vi en komplet relations‑backend i **MariaDB** og anvender moderne udviklings‑ og sikkerhedsmetoder.
+Dette forløb fokuserer udelukkende på **netværk** og **relationsdatabaser**. Du lærer at konfigurere Docker‑netværk, opstille en robust **MariaDB**‑backend og arbejde med normaliserede skemaer, SQL‑forespørgsler og database­administration til *Elev i JYSK*‑appen.
 
-Vi lægger vægt på **hands‑on** læring: hver workshop indeholder praktiske øvelser, som bygger oven på hinanden og kulminerer i en samlet, funktionel prototype.
+Alle øvelser er hands‑on og bygger oven på hinanden, så du ender med en komplet, driftssikker database­løsning.
 
 ---
 
 ## 📆 Struktur for workshops
 
-| Nr. | Workshop                                      | Fokus                                                                                         |
-| --- | --------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| 1   | **Workshop 1 – Design‑ og udviklingsproces**  | Iterativ model (Design Thinking + Agile), persona‑arbejde, idégenerering og rapid prototyping |
-| 2   | **Workshop 2 – Databeskyttelse & GDPR**       | Kortlægning af datatyper, samtykkeflow, privacy‑notice og lovpligtige rettigheder             |
-| 3   | **Workshop 3 – Sikkerhed & Digital adfærd**   | Trusselsmodellering, logisk sikkerhed, MFA, VPN og bedste praksis for brugerne                |
-| 4   | **Workshop 4 – Data & MariaDB**               | Normaliseret skema, testdata, SQL‑forespørgsler og statistik                                  |
-| 5   | **Workshop 5 – Analyse af digitalt artefakt** | Teknologi‑, formåls‑, brugs‑ og konsekvensanalyse samt benchmark mod anden app                |
+| Nr. | Workshop                                                 | Fokus                                                    |
+| --- | -------------------------------------------------------- | -------------------------------------------------------- |
+| 1   | **Workshop 1 – Docker‑netværk & Grund­læggende MariaDB** | Opret bridge‑netværk, start container, seed eksempeldata |
+| 2   | **Workshop 2 – Datamodellering & Normalisering**         | Design 3NF‑skema, primær‑/fremmednøgler, ER‑diagram      |
+| 3   | **Workshop 3 – SQL‑forespørgsler & Statistik**           | CRUD‑operationer, JOINs, aggregering, views og index     |
+| 4   | **Workshop 4 – Backup, Sikkerhed & Rettigheder**         | Brugerstyring, læse‑/skrive­rettigheder, dump & restore  |
 
 ---
 
-## 📚 Kompetencer I opbygger
+## 📚 Kompetencer du opbygger
 
-Når workshopsene er gennemført, kan I:
-
-* Anvende en brugercentreret udviklingsproces.
-* Designe og implementere et normaliseret MariaDB‑skema med SQL‑forespørgsler.
-* Kortlægge og overholde GDPR‑krav i en mobil app.
-* Implementere kerne‑sikkerhedskontroller (kryptering, adgangsstyring, MFA).
-* Foretage teknologi‑, brug‑ og konsekvensanalyse af digitale produkter.
-* Dokumentere tekniske løsninger klart og professionelt.
+* Konfiguration af Docker‑netværk til databaser
+* Opsætning og administration af MariaDB‑servere
+* Design af normaliserede relationsskemaer i 3. normalform
+* Skrivning af effektive SQL‑forespørgsler (JOIN, GROUP BY, sub‑queries)
+* Implementering af backup‑strategier og brugerrettigheder
 
 ---
 
 ## 📜 Licens
 
-Udgivet under MIT‑licensen – se `LICENSE`.
+Dette materiale udgives under MIT‑licensen – se `LICENSE` for detaljer.
