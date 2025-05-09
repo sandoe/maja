@@ -104,7 +104,7 @@ docker-compose up -d mariadb
 ```bash
 mariadb -h 127.0.0.1 -P 3306 -u jysk -p jysk_workshop
 ```
-
+OBS! Husk passwd: jyskpass
 ---
 
 ## 6. Kør Node.js-script
