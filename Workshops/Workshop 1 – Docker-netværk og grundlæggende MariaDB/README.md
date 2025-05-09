@@ -85,15 +85,15 @@ networks:
 1. Genstart MariaDB-containeren:
 
 ```bash
-docker compose down
-docker compose up -d mariadb
+docker-compose down
+docker-compose up -d mariadb
 ```
 
 2. Kør seed-scripts:
 
 ```bash
-docker compose exec mariadb sh -c "mysql -u root -p$MYSQL_ROOT_PASSWORD < sql/create_schema.sql"
-docker compose exec mariadb sh -c "mysql -u root -p$MYSQL_ROOT_PASSWORD < sql/sample_data.sql"
+docker-compose exec mariadb sh -c "mysql -u root -p$MYSQL_ROOT_PASSWORD < sql/create_schema.sql"
+docker-compose exec mariadb sh -c "mysql -u root -p$MYSQL_ROOT_PASSWORD < sql/sample_data.sql"
 ```
 
 ---
@@ -103,7 +103,7 @@ docker compose exec mariadb sh -c "mysql -u root -p$MYSQL_ROOT_PASSWORD < sql/sa
 1. Log ind i databasen:
 
 ```bash
-docker compose exec mariadb mariadb -u jysk -p$MYSQL_PASSWORD jysk_workshop
+docker-compose exec mariadb mariadb -u jysk -p$MYSQL_PASSWORD jysk_workshop
 ```
 
 2. Prøv kommandoerne:
